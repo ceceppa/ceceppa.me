@@ -1,0 +1,42 @@
+.footer {
+  &__menu {
+    flex-grow: 1;
+    text-align: right;
+
+    padding: 0 32px;
+
+    span {
+      pointer-events: none;
+    }
+
+    &:hover {
+      color: var(--color-menu-orange);
+
+      span:first-child {
+        background-position: -360% 0;
+      }
+
+      span:last-child {
+        background-position: 820% 0;
+      }
+    }
+
+    &--ul {
+      display: flex;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      justify-content: flex-end;
+      text-align: center;
+    }
+
+    li {
+      list-style: none;
+      margin: 0 16px;
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-top: 20px;
+    }
+  }
+}

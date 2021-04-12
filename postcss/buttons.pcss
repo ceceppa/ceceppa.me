@@ -1,0 +1,27 @@
+button {
+  border: none;
+  background-color: var(--color-light-orange);
+  color: var(--color-white);
+  border-radius: 2px;
+  transition: all var(--transition-fast) ease;
+  padding: 5px 10px;
+  font-family: 'Lato';
+  font-size: inherit;
+  font-weight: normal;
+
+  &:focus,
+  &:hover {
+    background-color: var(--color-orange);
+  }
+
+  &.--no-padding {
+    padding: 0 !important;
+  }
+
+  .wpforms-form &[type="submit"] {
+    color: var(--color-white);
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+}

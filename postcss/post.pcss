@@ -1,0 +1,27 @@
+body.single-post {
+  overflow-x: hidden;
+
+  #content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+article.post {
+  background: var(--color-bg);
+  position: relative;
+  z-index: 1;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr) 18.75rem;
+  column-gap: 20px;
+  box-sizing: content-box;
+
+  @media screen and (max-width:767px) {
+    display: block;
+    padding-top: 0px;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "require": {
+    "ceceppa/meno": "@dev",
+    "jjgrainger/posttypes": "^2.1"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@gitlab.com:ceceppa/meno.git"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+module.exports = {
+  plugins: {
+    precss: {},
+    'postcss-preset-env': { browsers: 'last 2 versions' },
+    'postcss-for': {},
+    'postcss-pxtorem': {
+      rootValue: 16,
+      unitPrecision: 5,
+      propList: [
+        'font',
+        'font-size',
+        'line-height',
+        'letter-spacing',
+        'width',
+        'max-width',
+        'padding',
+        'padding-left',
+        'padding-right',
+        'padding-top',
+        'padding-bottom',
+        'margin',
+        'margin-left',
+        'margin-right',
+        'margin-right',
+        'margin-top',
+        'margin-bottom',
+        'flex-basis'
+      ],
+      selectorBlackList: [],
+      replace: true,
+      mediaQuery: true,
+      minPixelValue: 0,
+    },
+    'postcss-extend': {},
+  },
+};

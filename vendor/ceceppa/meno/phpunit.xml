@@ -1,0 +1,19 @@
+<phpunit
+	bootstrap="tests/phpunit/bootstrap.php"
+	backupGlobals="false"
+	colors="true"
+	convertErrorsToExceptions="true"
+	convertNoticesToExceptions="true"
+	convertWarningsToExceptions="true"
+	printerClass="Sempro\PHPUnitPrettyPrinter\PrettyPrinter"
+>
+	<testsuites>
+		<testsuite name="meno">
+			<file>tests/phpunit/tests/test-get-image-info.php</file>
+			<file>tests/phpunit/tests/test-get-downsize-image.php</file>
+			<file>tests/phpunit/tests/test-get-downsize-image-info.php</file>
+			<file>tests/phpunit/tests/test-handle-filesize-size.php</file>
+			<file>tests/phpunit/tests/test-meno.php</file>
+		</testsuite>
+	</testsuites>
+</phpunit>

@@ -1,0 +1,27 @@
+.post-ad {
+  &__small {
+    grid-column-start: 13;
+    grid-column-end: 14;
+    grid-row-start: 3;
+    margin-top: 30px;
+
+    @media screen and (max-width: 975px) {
+      display: none;
+    }
+  }
+
+  &__big {
+    grid-column-start: 1;
+    grid-column-end: 14;
+    grid-row-start: 4;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 11px;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+}

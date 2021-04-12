@@ -1,0 +1,23 @@
+input {
+  padding: 5px 10px;
+  font-size: inherit;
+  transition: all var(--transition-fast) ease;
+
+  &[type="submit"] {
+    background-position: 100% 100%;
+    background-size: 200% 100%;
+    padding: 10px;
+    background-image: linear-gradient(to right, var(--color-orange) 0%, var(--color-orange) 49.9999%, var(--color-orange-opaque) 50%, var(--color-orange-opaque) 100%);
+    border-radius: 5px;
+    perspective: 1000px;
+    border: none;
+    cursor: pointer;
+    color: var(--color-black);
+    font-weight: normal;
+
+    &:hover {
+      background-position: 0% 100%;
+      color: var(--color-white);
+    }
+  }
+}

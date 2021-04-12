@@ -1,0 +1,16 @@
+.social-bar {
+  height: 28px;
+  position: relative;
+  overflow: visible;
+  text-align: center;
+
+  svg {
+    height: 24px;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 569px) {
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+}

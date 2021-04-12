@@ -1,0 +1,26 @@
+.mobile {
+  &-flex {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      flex-direction: column !important;
+    }
+
+    &--columns {
+      @media screen and (max-width: 767px) {
+        flex-direction: column !important;
+      }
+    }
+
+    &--rows {
+      @media screen and (max-width: 767px) {
+        flex-direction: row !important;
+      }
+    }
+  }
+
+  &--hide {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}

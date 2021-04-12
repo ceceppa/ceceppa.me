@@ -1,0 +1,15 @@
+blockquote {
+  color: var(--color-quote);
+  padding: 0 30px;
+  position: relative;
+  margin: 0;
+  border-left: 5px solid var(--color-quote-border);
+
+  & p:first-child::before {
+    content: '\201C';
+  }
+
+  & p:last-child::after {
+    content: '\201D';
+  }
+}

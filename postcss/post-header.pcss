@@ -1,0 +1,21 @@
+.post-header {
+  grid-column-start: 1;
+  grid-column-end: 14;
+  grid-row-start: 1;
+
+  &__title {
+    font-size: 48px;
+    text-align: left;
+  }
+
+  @media screen and (max-width: 400px) {
+    &__top {
+      display: block;
+    }
+
+    &__separator {
+      display: none;
+    }
+
+  }
+}

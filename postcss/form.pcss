@@ -1,0 +1,58 @@
+.post-body {
+  .form {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px 0 rgba(249, 105, 14, 0.2);
+    overflow: hidden;
+    margin-top: 80px;
+
+    &__left,
+    &__right {
+      padding: 32px;
+    }
+
+    &__left {
+      background-color: var(--color-body-link);
+      color: var(--color-white);
+      flex-basis: 40%;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    &__right {
+      flex-basis: 60%;
+
+      .form-block,
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-block {
+        margin-bottom: 20px;
+      }
+
+      label {
+        color: var(--color-black);
+      }
+
+    }
+
+    &__note p {
+      margin-bottom: 20px;
+      font-size: 13px;
+    }
+
+    &__submit {
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+}
